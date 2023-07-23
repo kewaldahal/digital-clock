@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin to create space for the credit */
+}
+
+.time {
+  font-size: 40px;
+  color: rgb(36, 15, 221);
+  padding: 0 5px;
+}
+
+
+@keyframes neonGlow {
+  0% {
+      box-shadow: 0 0 10px rgba(188, 17, 17, 0.8), 0 0 20px rgba(0, 0, 255, 0.8);
+  }
+  30% {
+    box-shadow: 0 0 10px rgba(175, 189, 16, 0.8), 0 0 20px rgba(239, 13, 247, 0.8);
+}
+50% {
+  box-shadow: 0 0 10px rgba(16, 116, 117, 0.8), 0 0 20px rgba(118, 229, 96, 0.8);
+}
+70% {
+  box-shadow: 0 0 10px rgba(93, 104, 8, 0.8), 0 0 20px rgba(81, 2, 80, 0.8);
+}
+90% {
+  box-shadow: 0 0 10px rgba(62, 4, 222, 0.8), 0 0 20px rgba(57, 57, 218, 0.8);
+}
+  100% {
+      box-shadow: 0 0 20px rgba(33, 5, 141, 0.8), 0 0 30px rgba(0, 255, 34, 0.8), 0 0 40px rgba(255, 0, 0, 0.8);
+  }
+}
+.credit {
+  font-size: 20px;
+  color: rgb(16, 255, 3);
+  text-align: center; /* Center align the text */
+}
+
+.credit a {
+  color: rgb(254, 0, 0);
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+  color: rgb(0, 4, 255);
+  animation-fill-mode: forwards;
+}

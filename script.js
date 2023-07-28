@@ -1,3 +1,4 @@
+
 function updateClock() {
   const now = new Date();
   const hours = String(now.getHours()).padStart(2, '0');
@@ -7,10 +8,6 @@ function updateClock() {
   document.getElementById('hours').innerText = hours;
   document.getElementById('minutes').innerText = minutes;
   document.getElementById('seconds').innerText = seconds;
-
-  // Assuming there's a function called getNepaliTime() that converts the time to Nepali format
-  const nepaliTime = getNepaliTime(hours, minutes, seconds);
-  // Use the converted Nepali time as needed
 }
 
 function startTimer(duration) {
@@ -40,3 +37,4 @@ document.getElementById('startTimerBtn').addEventListener('click', function () {
   const selectedTime = parseInt(document.getElementById('timerDropdown').value);
   startTimer(selectedTime);
 });
+
